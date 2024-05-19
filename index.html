@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .ul li:hover {
+      color: red;
+      text-decoration: none;
+    }
+
+    .letUs {
+      border: 2px solid white;
+      border-radius: 33px;
+      padding: 12px 2px;
+    }
+
+    .letUs :hover {
+      box-shadow: rgb(255, 255, 255) 0px 0px 0px 2px, rgb(224, 49, 49) 0px 0px 0px 5px;
+    }
+
+    .letUs a {
+      font-size: medium;
+      font-weight: 700;
+      color: white;
+      font-family: sans-serif;
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: red;
+      border-radius: 33px;
+    }
+
+    .icon {
+      margin-right: 7px;
+      border: 1px solid rgb(237, 231, 231);
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: rgba(128, 128, 128, 0.178);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .icon:hover {
+      box-shadow: rgb(255, 255, 255) 0px 0px 0px 2px, rgb(184, 177, 177) 0px 0px 0px 5px;
+    }
+
+    .getStarted {
+      border: 2px solid white;
+      border-radius: 33px;
+      padding: 12px 12px;
+    }
+
+    .getStarted :hover {
+      box-shadow: rgb(255, 255, 255) 0px 0px 0px 2px, rgb(224, 49, 49) 0px 0px 0px 5px;
+    }
+
+    .getStarted a {
+      font-size: medium;
+      font-weight: 700;
+      color: white;
+      font-family: sans-serif;
+      text-decoration: none;
+      padding: 20px 50px;
+      background-color: red;
+      border-radius: 33px;
+    }
+
+    .read:hover {
+      text-decoration: none !important;
+    }
+
+    .arw:hover {
+      transform: translate(20px);
+      /* transition-duration: 1s; */
+
+    }
+
+    @media (max-width:680px) {
+      h1 {
+        font-size: 30px !important;
+        font-weight: 900 !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="container-fluid bg-light">
+    <div class="row   justify-content-center py-2 px-3 mb-lg-5">
+      <div class="col-6 col-lg-3">
+        <img src="./img/Capture.PNG" style="width: 180px;" alt="" class="d-none d-lg-block">
+        <img src="./img/xslogo.PNG" style="width: 50px;" alt="" class="d-flex d-lg-none">
+      </div>
+      <div class="d-none d-lg-block col-lg-6 ">
+        <div class="ul">
+          <ul class="d-flex justify-content-center list-unstyled align-items-center pt-3">
+            <li class="me-5"><span>Services</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                aria-hidden="true" class="chevron">
+                <path
+                  d="M1.62072 0.818115L0.560059 1.87878L5.86335 7.1821L11.1666 1.8788L10.106 0.818137L5.86336 5.06076L1.62072 0.818115Z"
+                  fill="currentColor"></path>
+              </svg>
+            </li>
+            <li class="text-danger me-5">Case Studies</li>
+            <li class="me-5">Blog</li>
+            <li><span>Resources</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                aria-hidden="true" class="chevron">
+                <path
+                  d="M1.62072 0.818115L0.560059 1.87878L5.86335 7.1821L11.1666 1.8788L10.106 0.818137L5.86336 5.06076L1.62072 0.818115Z"
+                  fill="currentColor"></path>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="d-flex justify-content-end align-items-center">
+          <div class="d-flex ">
+            <div class="icon">
+              <i class=" fa-solid fa-magnifying-glass "></i>
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center;"> <i
+                class="fa-solid fa-bars d-flex d-lg-none fs-5"></i></div>
+          </div>
+          <div class="d-none d-lg-block letUs">
+            <a href="">
+              Let's get started!
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center pt-5">
+      <div class="col-11">
+        <div class="row">
+          <div class="col-lg-10 mt-5">
+            <h1 class="" style="font-size: 50.296px; font-family:  Arial, Helvetica, sans-serif;font-weight: 700;">
+              Companies like yours create meaningful solutions with thoughtbot</h1>
+          </div>
+          <div class="col-lg-6 mt-4">
+            <p style="font-size: 19px; font-family: Arial, Helvetica, sans-serif;font-weight: 100;">whether you are
+              starting from an initial ideas or have spent decades running a business, thoughtbot has the experience to
+              help create successful outcomes for yiur product </p>
+          </div>
+          <div class="col-12 getStarted mt-4">
+            <a href="">
+              Let's get started!
+            </a>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 150px;">
+          <div class="col-12">
+            <p style="font-weight: 400;">FOUNDERS</p>
+            <h1 class="fw-bolder">We help new startups quickly go from idea to product</h1>
+          </div>
+          <div class="col-lg-8 mt-3">
+            <img src="./img/heathmatch.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-lg-4" style="background-color: #f0f0f8;  padding-top: 120px;">
+            <div class="row justify-content-center">
+              <div class="col-11">
+                <h2 style="font-size: 18px; font-weight: 100;">FEATURED CASE STUDY</h2>
+                <h3 style="font-size: 33px; font-weight: 700;">Health Match 360</h3>
+                <p style="font-size: 21px;">Rapid validation of a therapist matching web app</p>
+
+                <div class="read" style="padding-top: 160px; font-size: 22px;; text-decoration: underline;">
+                  <a href="" class="text-danger">Read the case study</a>
+                </div>
+                <div class="arw">
+                  <a href=""><img src="./img/arw2.PNG" alt="" style="width:50px;"> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row" style="margin-top: 100px; justify-content: space-between;">
+          <div class="col-md-6">
+            <img src="./img/joydrive.jpg" alt="" class="img-fluid">
+
+            <div class="row mt-2">
+              <div class="col-10 ">
+                <p><strong style="color: #494A51; font-size:21.96px;">Joydrive </strong>
+                  — Online auto seller goes from concept to Superbowl Sunday launch</p>
+
+
+              </div>
+            </div>
+            <div class="read" style="padding-top: 15px; font-size: 22px;; text-decoration: underline;">
+              <a href="" class="text-danger">Read the case study</a>
+            </div>
+
+            <div class="arw">
+              <a href=""><img src="./img/arw2.PNG" alt="" style="width:50px;"></a>
+            </div>
+
+
+          </div>
+
+          <div class=" col-md-6">
+            <img src="./img/real2.jpg" alt="" class="img-fluid">
+
+            <div class="row mt-2">
+              <div class="col-10 ">
+                <p><strong style="color: #494A51; font-size:21.96px;">Real Simple Energy </strong>
+                  — Transforming algorithms and a vision into a customer-ready product </p>
+
+
+              </div>
+            </div>
+            <div class="read" style="padding-top: 15px; font-size: 22px;; text-decoration: underline;">
+              <a href="" class="text-danger">Read the case study</a>
+            </div>
+
+            <div class="arw">
+              <a href=""><img src="./img/arw2.PNG" alt="" style="width:50px;"></a>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div class="row px-5 " style=" margin-top: 80px; background-color: #f0f0f8;">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-9">
+              <p style="font-size: 23px; font-family: Arial, Helvetica, sans-serif; padding-top: 80px;">“Working with
+                the thoughtbot team has been a real pleasure. This project was highly iterative, and the team was always
+                extracting feedback from key stakeholders at our business and baking it into the process. We are pleased
+                with the outcome, and hope to work with them for a long time! </p>
+
+              <div class="row  justify-content-between">
+                <div class=" col-md-3">
+                  <div class="row">
+                    <div class="col-3"><img src="./img/womanpixx.png" alt="" style="border-radius: 50%; width: 50px;">
+                    </div>
+                    <div class="col-9">
+                      <span> <strong>Jordana Kier</strong></span>
+                      <p>Co-founder, LOLA</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3" style="margin-bottom: 80px;">
+                  <div class="read" style="padding-top: 15px; font-size: 22px;; text-decoration: underline;">
+                    <a href="" class="text-danger">Read the case study</a>
+                  </div>
+
+                  <div class="arw">
+                    <a href=""><img src="./img/arw2.PNG" alt="" style="width:50px;"></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-11">
+          <div class="row">
+            <div class="col-12" style="margin-top: 80px;">
+              <h2 class="fw-light" style="font-size: 18px;">STARTUPS, SCALE-UPS, AND BEYOND</h2>
+              <h3 style="font-size: 35px; font-weight: 600; font-family: Arial, Helvetica, sans-serif;">We help established
+                companies innovate and grow</h3>
+           </div>
+          </div> 
+
+          <div class="row justify-content-between mt-4">
+            <div class="col-md-6">
+              <img src="./img/digitalocean.jpg" alt="" class="img-fluid">
+    
+    
+              <div class="row mt-2">
+                <div class="col-10 ">
+                  <p><strong style="color: #494A51; font-size:21.96px;">DigitalOcean </strong>
+                    — Integrating a content management system to help marketing move faster</p>
+    
+    
+                </div>
+              </div>
+              <div class="read" style="padding-top: 15px; font-size: 22px;; text-decoration: underline;">
+                <a href="" class="text-danger">Read the case study</a>
+              </div>
+    
+              <div class="arw">
+                <a href=""><img src="./img/arw2.PNG" alt="" style="width:50px;"></a>
+              </div>
+    
+    
+            </div>
+
+            <div class=" col-md-6">
+              <img src="./img/teika.jpg" alt="" class="img-fluid">
+
+              <div class="row mt-2">
+                <div class="col-10 ">
+                  <p><strong style="color: #494A51; font-size:21.96px;">Teikametrics</strong>
+                    — Exploring and developing a new SaaS platform fueled by data engineering</p>
+    
+    
+                </div>
+              </div>
+              <div class="read" style="padding-top: 15px; font-size: 22px;; text-decoration: underline;">
+                <a href="" class=" text-danger">Read the case study</a>
+              </div>
+    
+              <div class="arw">
+                <a href=""><img src="./img/arw2.PNG" alt="" style="width:50px;"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-between" style="margin-top: 100px;">
+            <div class="col-md-6">
+              <img src="./img/closeknit.png" alt="" class="img-fluid">
+
+              <div class="row mt-2">
+                <div class="col-10 ">
+                  <p><strong style="color: #494A51; font-size:21.96px;">CloseKnit</strong>
+                    — Creating a scalable, multi-platform solution for virtual urgent care
+
+                  </p>
+    
+    
+                </div>
+              </div>
+              <div class="read" style="padding-top: 15px; font-size: 22px;; text-decoration: underline;">
+                <a href="" class=" text-danger">Read the case study</a>
+              </div>
+    
+              <div class="arw">
+                <a href=""><img src="./img/arw2.PNG" alt="" style="width:50px;"></a>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <img src="./img/barkbox.jpg" alt="" class="img-fluid">
+
+              <div class="row mt-2">
+                <div class="col-10 ">
+                  <p><strong style="color: #494A51; font-size:21.96px;">Bark & Co </strong>
+                    — Developing a full-stack team while launching a new product</p>
+    
+    
+                </div>
+              </div>
+              <div class="read" style="padding-top: 15px; font-size: 22px;; text-decoration: underline;">
+                <a href="" class=" text-danger">Read the case study</a>
+              </div>
+    
+              <div class="arw">
+                <a href=""><img src="./img/arw2.PNG" alt="" style="width:50px;"></a>
+              </div>
+            </div>
+          </div>
+
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="row" style="background-color: #f0f0f8; justify-content: center;" >
+        <div class="col-12">
+          <div class="row justify-content-center">
+            <div class="col-11">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="row">
+                    <div class="col-12">
+                      <label for="">FILTER BY INDUSTRY</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Show All</option>
+                        <option value="1">Show All</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4"></div>
+                <div class="col-4"></div>
+                                        
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+     
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
